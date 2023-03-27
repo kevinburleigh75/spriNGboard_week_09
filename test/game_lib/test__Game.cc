@@ -150,8 +150,8 @@ SCENARIO ("player actions are handled correctly")
               REQUIRE(player_2.get_was_asked_question() == true);
             }
 
-            THEN ("the player does not get out of the penalty box") {
-              REQUIRE(player_2.get_is_in_penalty_box() == true);
+            THEN ("the player does get out of the penalty box") {
+              REQUIRE(player_2.get_is_in_penalty_box() == false);
             }
 
             THEN ("the player gets one gold coin") {

@@ -219,8 +219,7 @@ void Game::_handle_player_turn (
     }
     else
     {
-      // preserve existing bug behavior
-      //cur_player.set_is_in_penalty_box(false);
+      cur_player.set_is_in_penalty_box(false);
 
       ostringstream ostr(std::ostringstream::out);
       ostr << cur_player.get_name()
